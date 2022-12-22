@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color:tomato;
+}
+
+ul{
+    /* height: 100%; */
+/*MARGIN was declared to enable the BULLET show*/
+    width: 100%;
+    text-decoration: none; /*TEXT DECORATION do help remove the underline from a TEXT*/
+    list-style: none; /*LIST STYLE  do help remove the BULLET OR NUMBER from a TEXT*/
+    line-height: 45px;
+    display: flex;
+  
+}
+
+li{
+    color: white;
+    padding-left: 30px;
+    background-color: crimson;
+    font-weight: bold;
+    width: 100%;
+    
+  
+}
+
+/* Hover means that when the MOUSE moves over a text, what should happen */
+li:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #663399;
+}
+
+/* if you want the LIST TO DISPLAY in HORIZONTAL format
+declare a 
+DISPLAY FLEX to line 16*/
