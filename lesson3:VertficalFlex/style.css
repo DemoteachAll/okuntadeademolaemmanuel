@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color:tomato;
+}
+
+ul{
+    height: 100%;
+    margin: 15px; /*MARGIN was declared to enable the BULLET show*/
+    width: 200px;
+    text-decoration: none; /*TEXT DECORATION do help remove the underline from a TEXT*/
+    list-style: none; /*LIST STYLE  do help remove the BULLET OR NUMBER from a TEXT*/
+    line-height: 45px;
+  
+}
+
+li{
+    color: white;
+    padding-left: 30px;
+    background-color: crimson;
+    font-weight: bold;
+    border-bottom: 2px ease green;
+  
+}
+
+/* Hover means that when the MOUSE moves over a text, what should happen */
+li:hover{
+    background-color: white;
+    cursor: pointer;
+    color: rebeccapurple;
+}
