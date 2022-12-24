@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Loading Div - GIPEX Training Consult</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax//libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!-- Navigation list starts here -->
+	<nav>
+		<ul id="menuList">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Our Product</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">&copy;+2347066425372 <br><b>GIPEX Training Consult</b></a></li>
+		</ul>
+	</nav>
+<!-- Navigation list ends here -->
+
+
+
+<!--  Menu icons starts here-->
+	<span id="show" onclick="show()">&Congruent;</span>
+	<span id="hide" onclick="hide()">&times;</span>
+<!--  Menu icons ends here-->
+
+
+<div id="container">
+	<div id="circleImg">
+		<div id="circle">
+			<img src="avatar.png">
+
+
+				<h2>HP</h2>
+		
+					<div id="loaderWelcome">
+						<div class="loader">
+					</div>
+				<div class="welcome">Welcome</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<script>
+	function show(){
+		document.getElementById("menuList").style.display="block";
+		document.getElementById("show").style.display="none";
+		document.getElementById("hide").style.display="block";
+	}
+
+	function hide(){
+		document.getElementById("menuList").style.display="none";
+		document.getElementById("show").style.display="block";
+		document.getElementById("hide").style.display="none";
+	}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	background-color: #16161E;
+}
+
+/*body{
+	background-color: skyblue;
+}*/
+nav{
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	float: right;
+}
+
+ul li{
+	list-style: none;
+	padding: 15px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	animation: test1 1s ease-in-out
+}
+
+@keyframes test1{
+	100%{
+		color: yellow;
+		transform: scale(1.1);
+		padding: 5px;
+	}
+}
+
+
+#container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*background-color: #16161E;*/
+
+}
+#circleImg{
+	position: relative;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+}
+
+#circle{
+	background-color: darkgrey;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+
+}
+
+#circleImg{
+	position: relative;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+}
+
+#circle{
+	background-color: darkgrey;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+
+}
+
+#circle img{
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	border-radius: 10px solid white;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#circleImg h2{
+	padding-top: 210px;
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+	text-transform: lowercase;
+	color: white;
+}
+
+
+#loaderWelcome{
+	display: flex;
+
+	/*transform: translate(40px);*/
+}
+#loaderWelcome .loader{
+	width: 30px;
+	height: 30px;
+	border: 5px solid white;
+	border-radius: 50%;
+	border-top-color: #16161E;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+#loaderWelcome .welcome{
+	color: white;
+	font-size: 25px;
+	padding-left: 20px;
+} 
+
+
+#show, #hide{
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+	display: none;
+	position: absolute; /*absolute makes it overlaps on each other*/
+	animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+	100%{
+		transform: scale(1.1);
+		color: orange;
+		font-weight: bold;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*desktop Menu List Responsiveness*/
+
+/*it was first placed as 600px then I changed it to 1500px for Desktop*/
+@media screen and (max-width: 1500px){
+	#menuList{
+		display: none;
+		position: absolute;
+		top: 70px;
+		width: 20%;
+
+	}
+	#menuList li{
+		background-color: #161616E;
+		border-bottom: 1px solid white;
+		line-height: 20px;
+	}
+
+
+#show, #hide{
+	display: block;
+}
+
+}
+/*desktop Menu List Responsiveness ends here*/
+
+
+
+
+/*mobile Menu List Responsiveness*/
+
+/*it was first placed as 600px then I changed it to 1500px for Desktop*/
+@media screen and (max-width: 900px){
+	#menuList{
+		display: none;
+		position: absolute;
+		top: 70px;
+		width: 100%;
+
+	}
+	#menuList li{
+		background-color: #161616E;
+		border-bottom: 1px solid white;
+		line-height: 20px;
+	}
+
+#show, #hide{
+	display: block;
+}
+
+#container{
+	top: 60%;
+}
+}
+/*mobile Menu List Responsiveness*/
