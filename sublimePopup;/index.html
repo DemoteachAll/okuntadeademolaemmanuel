@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sublimePopUp</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+	<script src="https://cdnjs.cloudflare.com/ajax//libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="popUpSublime" class="popUpSublime">
+	<div class="iconsTops">
+		<i class="fas fa-book"></i>
+		<p>This is an unregistered copy</p>
+	</div>
+
+		<div class="times" onclick="hide()">&times;</div>
+
+
+	<p>Hello! Thanks for trying out Sublime Text. <br><br>This is an unregistered evaluation version, and <br>although the trial is untimed, a license must be <br>purchased for continued use. <br><br>
+
+	Would you like to purchase a license now?</p>
+
+	<form>
+
+	<button id="purchase">Purchase</button>
+	
+	</form>
+
+</div>
+	
+
+
+<script>
+	function hide(){
+		$("#popUpSublime").hide();
+	}	
+</script>
+
+</body>
+</html>
