@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>popUpFirefox</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+	<script src="https://cdnjs.cloudflare.com/ajax//libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="popUp">
+	
+
+	<div class="arrowUpdate">
+	<button id="arrow"><i class="fas fa-arrow-up-long"></i></button>
+	<h4>Update available</h4>
+</div>
+	<p>Firefox couldn't complete update automatically. Download the new <br>
+	version - you won't lose saved information or customizations</p>
+
+		<button class="dismiss" id="close" onclick="closeModal()">Dis<span>m</span>iss</button>
+	<button class="download"><span>D</span>ownload</button>
+
+
+	
+
+</div>
+	
+
+	<script>
+		$(window).on('load', function(){
+			$('.popUp').fadeIn(2000);
+			$('.popUp').fadeOut(6000);
+		})
+	
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-family: "Poppins", sans-serif;
+}
+
+body{
+	background-color: #16061E;
+}
+
+.popUp{
+	position: absolute;
+	top: 0%;
+	right: 50%;
+	transform: translate(130%, 0%) ;
+	margin-top: 10px;
+	padding: 20px;
+	background-color: white;
+	font-size: 13px;
+	border-radius: 10px;
+	animation: open 1s linear;
+	display: none;
+	
+}
+
+@keyframes open{
+	15%{
+		transform: rotate(60deg);
+	}
+
+	30%{
+		transform: rotate(120deg);
+	}
+
+	45%{
+		transform: rotate(180deg);
+	}
+
+	60%{
+		transform: rotate(240deg);
+	}
+
+	100%{
+		transform:scale(0.1);
+		margin-right: 50px;
+		padding: 20px;
+		margin-top: 50px;
+	}
+}
+
+
+
+
+
+.popUp .arrowUpdate{
+	display: flex;
+	column-gap: 20px;
+}
+
+.popUp #arrow{
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	border-radius: 50%;
+}
+
+.popUp h4{
+	font-weight: 700;
+	padding-bottom: 10px;
+	word-wrap: break-word;
+}
+
+.popUp p{
+	padding-left: 40px;
+	padding-bottom: 5px;
+}
+
+.download,.dismiss
+{
+	width: 25%;
+	height: 25%;
+	outline: none;
+	border: none;
+	height: 40px;
+	float: right;
+	border-radius: 10px;
+	margin-left: 15px;
+	margin-top: 15px;
+	cursor: pointer;
+	/*font-weight: 600;*/
+}
+
+.download{
+	background-color: blue;
+	color: white;
+}
+.dismiss{
+	background-color: lightgrey;
+}
+
+span{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 840px){
+	.popUp{
+		width: 50%;
+	}
+
+	.download,.dismiss{
+		width: 100%;
+	}
+}
+
