@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Windows Shutting Down</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax//libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div class="middleBoxBackground">
+		<div class="middleBox">
+	<div id="loaderCircle">
+	</div>
+	<div id="windowsText">Windows is shutting down</div>
+</div>
+</div>
+
+	<div class="loader">
+		<div></div>
+	</div>
+
+<script>
+	$(window).on('load',function(){
+		$('.loader').fadeOut(2000);
+		$('.middleBox').fadeIn(5000)
+	});
+</script>
+</body>
+</html>

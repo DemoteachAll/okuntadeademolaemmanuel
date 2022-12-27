@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-family: "Poppins", sans-serif;
+}
+
+.loader{
+	background-color: #16161E;
+	height: 100%;
+	width: 100vw;
+}
+.middleBoxBackground{
+	background-color: blue;
+	height: 100vh;
+	/*display: none;*/
+}
+.middleBoxBackground .middleBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	display: none;
+}
+
+.middleBoxBackground .middleBox #loaderCircle{
+	content: "";
+	position:absolute;
+	width: 100px;
+	height: 100px;
+	/*background-color: green;*/
+	border-radius: 50%;
+	/*border-top-color: yellow;*/
+	border: 10px dotted white;
+	animation: spin 3s linear infinite;
+	
+	top: -500%;
+	left: 25%;
+
+}
+
+@keyframes spin{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.windowsText{
+	top: 120px;
+	animation: out 1s ease-out;
+	/*animation-delay: 5s;*/
+}
+
+@keyframes out{
+	100%{
+		transform: scale(1.0);
+	}
+}
