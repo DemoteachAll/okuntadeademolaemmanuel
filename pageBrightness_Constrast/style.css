@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-family: "Poppins", sans-serif;
+	
+}
+
+#middleContainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: navy;
+}
+
+#middleContainer #sunRange{
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px white;
+	animation: movement 0.5s linear;
+}
+
+@keyframes movement{
+	100%{
+		transform: rotate(180deg) scale(0.4);
+		
+	}
+}
+#middleContainer #range{
+	width: 100%;
+	-webkit-appearance: none;
+	background-color: navy;
+	height: 3px;
+	cursor: pointer;
+}
+
+#middleContainer #range:-webkit-slider-thumb{
+	-webkit-appearance: none;
+}
+
+#middleContainer i{
+	background-color: white;
+	color: navy;
+	/*border-radius: 50%;*/
+	font-weight: bold;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 5px;
+	
+}
+
+
+#middleContainer i:nth-child(1){
+	background-color: rgb(228, 151, 9);
+	animation: blink 5s linear infinite;
+}
+
+@keyframes blink{
+	100%{
+		transform: rotate(60deg) scale(0.4);
+	}
+}
+
+#middleContainer i:last-child{
+	background-color: yellow;
+	animation: blink2 1s linear infinite;
+}
+
+@keyframes blink2 {
+	0%, 100%{
+		transform: scale(1);
+	}
+	20%{
+		transform: scale(1.1);
+		margin-top: -2%;
+	}
+	40%{
+		transform: 1.2;
+	}
+}
